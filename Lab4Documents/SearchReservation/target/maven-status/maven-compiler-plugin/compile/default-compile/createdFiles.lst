@@ -1,0 +1,6 @@
+ryerson/ca/searchreservation/business/SearchBusiness.class
+ryerson/ca/searchreservation/helper/ReservationXML.class
+ryerson/ca/searchreservation/persistence/Reservation_Search_CRUD.class
+ryerson/ca/searchreservation/endpoint/ApplicationConfig.class
+ryerson/ca/searchreservation/helper/ReservationSlot.class
+ryerson/ca/searchreservation/endpoint/SearchResource.class

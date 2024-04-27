@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Reservation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <h1>Add Reservation Slot</h1>
+
+    <form action="webresources/add/update" method="post"> 
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" placeholder="YYYY/MM/DD" required><br><br>
+
+        <label for="time">Time:</label>
+        <input type="text" id="time" name="time" placeholder="HH:MM" required><br><br>
+
+        <label for="tableOccupancy">Table Occupancy:</label>
+        <input type="number" id="tableOccupancy" name="tableOccupancy" required><br><br>
+
+        <button type="submit">Add Reservation</button>
+    </form>
+</body>
+</html>

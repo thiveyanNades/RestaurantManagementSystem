@@ -1,0 +1,5 @@
+ryerson/ca/addreservation/persistence/Reservation_CRUD.class
+ryerson/ca/addreservation/endpoint/AddResource.class
+ryerson/ca/addreservation/endpoint/ApplicationConfig.class
+ryerson/ca/addreservation/helper/ReservationSlot.class
+ryerson/ca/addreservation/business/AddReservation.class

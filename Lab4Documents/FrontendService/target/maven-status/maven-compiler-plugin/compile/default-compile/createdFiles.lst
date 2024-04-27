@@ -1,0 +1,6 @@
+ryerson/ca/frontend/FrontEnd.class
+ryerson/ca/helper/ReservationXML.class
+ryerson/ca/frontend/Authenticate.class
+ryerson/ca/business/XMLParser.class
+ryerson/ca/helper/ReservationSlot.class
+ryerson/ca/business/Business.class
