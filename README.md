@@ -15,3 +15,8 @@ The manager GUI could be accessed when they login in the top right.
 The manager has the additional option to add a reservation slot to the system.
 ![image](https://github.com/thiveyanNades/RestaurantManagementSystem/assets/132423635/39fd4630-83b3-49bc-945d-6d43d407083a)
 
+When the reservation slot is searched from the backend microservice, the XML file of the reservation slots will be shown.
+![image](https://github.com/thiveyanNades/RestaurantManagementSystem/assets/132423635/bcc0607a-cc9a-410c-a5a1-593b1758512a)
+
+When the reservation slot is searched from the front end microservice, the reservation slots will be shown as below.
+![image](https://github.com/thiveyanNades/RestaurantManagementSystem/assets/132423635/67a56b1c-ff0e-4d16-8303-98b626ac3d6c)
