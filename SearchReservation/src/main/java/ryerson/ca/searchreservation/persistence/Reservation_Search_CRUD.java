@@ -23,7 +23,7 @@ public class Reservation_Search_CRUD {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/COE692_Lab3?autoReconnect=true&useSSL=false", "root", "student");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/search_LBS?autoReconnect=true&useSSL=false", "root", "student");
             System.out.println("Connection established.");
         } catch (Exception e) {
             System.out.println(e);
