@@ -25,7 +25,7 @@ public class Reservation_CRUD {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/COE692_Lab3?autoReconnect=true&useSSL=false", "root", "student");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/add_LBS?autoReconnect=true&useSSL=false", "root", "student");
             System.out.println("Connection established.");
         } catch (Exception e) {
             System.out.println(e);
@@ -37,7 +37,7 @@ public class Reservation_CRUD {
         List<ReservationSlot> reservations = new ArrayList<>();
         try {
             Connection con = getConnection();
-            String query = "SELECT * FROM Reservation";
+            String query = "SELECT * FROM Reservation_Add";
             try (PreparedStatement ps = con.prepareStatement(query)) {
                 ResultSet rs = ps.executeQuery();
                 while (rs.next()) {
@@ -59,7 +59,7 @@ public class Reservation_CRUD {
     public static boolean addReservation(ReservationSlot reservation) {
     try {
         try (Connection con = getConnection()) {
-            String query = "INSERT INTO Reservation (date, time, tableOccupancy, id) VALUES (?, ?, ?, ?)";
+            String query = "INSERT INTO Reservation_Add(date, time, tableOccupancy, id) VALUES (?, ?, ?, ?)";
             try (PreparedStatement ps = con.prepareStatement(query)) {
                 ps.setString(1, reservation.getDate());
                 ps.setString(2, reservation.getTime());
@@ -80,7 +80,7 @@ public class Reservation_CRUD {
     public static ReservationSlot getReservation(String date) {
         ReservationSlot reservation = null;
         try (Connection con = getConnection();
-             PreparedStatement ps = con.prepareStatement("SELECT * FROM Reservation WHERE date = ?")) {
+             PreparedStatement ps = con.prepareStatement("SELECT * FROM Reservation_Add WHERE date = ?")) {
             ps.setString(1, date);
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {
